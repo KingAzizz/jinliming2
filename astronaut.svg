@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="854" height="356" viewBox="0 0 854 356" preserveAspectRatio="none">
+  <!-- Background -->
+  <rect fill="#000" x="0" y="0" width="854" height="356" />
+  <!-- meteor shower -->
+  <g stroke="#555">
+    <line x1="50" x2="50">
+      <animate attributeName="y1" values="-150;400" dur="1s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="0;550" dur="1s" repeatCount="indefinite" />
+    </line>
+    <line x1="160" x2="160">
+      <animate attributeName="y1" values="-60;400" dur=".8s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="0;460" dur=".8s" repeatCount="indefinite" />
+    </line>
+    <line x1="280" x2="280">
+      <animate attributeName="y1" values="-120;400" dur="1.2s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="0;520" dur="1.2s" repeatCount="indefinite" />
+    </line>
+    <line x1="420" x2="420">
+      <animate attributeName="y1" values="-80;400" dur=".7s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="0;480" dur=".7s" repeatCount="indefinite" />
+    </line>
+    <line x1="560" x2="560">
+      <animate attributeName="y1" values="-180;400" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="0;580" dur="1.5s" repeatCount="indefinite" />
+    </line>
+    <line x1="640" x2="640">
+      <animate attributeName="y1" values="-80;400" dur="1s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="0;480" dur="1s" repeatCount="indefinite" />
+    </line>
+    <line x1="800" x2="800">
+      <animate attributeName="y1" values="-130;400" dur=".9s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="0;530" dur=".9s" repeatCount="indefinite" />
+    </line>
+  </g>
+  <!-- astronaut: width="70" height="140" -->
+  <g fill="#ccc" stroke="#333" stroke-width="3" stroke-linecap="round" transform="translate(387 108)">
+    <animateMotion dur="1s" repeatCount="indefinite" path="m0,0v-2zv2zh-2zh2zv3zv-3zh3zh-3z" />
+    <!-- Body -->
+    <rect x="0" y="55" width="70" height="50" rx="16" />
+    <path fill="#888" d="M0,92H70a16,13 0 0 1 -16,13H16a16,13 0 0 1 -16,-13Z" />
+    <!-- foot -->
+    <path d="M15,70v60a10,10 0 0 0 20,0a10,10 0 0 0 20,0v-60m-20,-5v40m0,10v15m-10,-25a10,10 0 0 0 20,0" />
+    <!-- Head -->
+    <circle cx="35" cy="45" r="20" />
+    <!-- Face Window Mask -->
+    <path fill="#41d2f7" d="M15,40a20,4 0 0 1 40,0q4,6 -3,15a17,4 0 0 1 -34,0q-7,-6 -3,-15" />
+    <path fill="#fff" stroke-width="0" d="M50,42q5,5 -5,10q-1,2 -2,-1q8,-5 5,-10z" />
+    <!-- antenna -->
+    <rect fill="#888" stroke-width="0" x="34" y="5" width="2" height="20" />
+    <circle cx="35" cy="5" r="5" />
+    <!-- wireless -->
+    <g fill="transparent" stroke="#888" transform="translate(35 5) rotate(-25)">
+      <circle r="10" stroke-dasharray="10 21 10 100" opacity=".0">
+        <animate attributeName="opacity" values=".0;1;.0" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <circle r="16" stroke-dasharray="16 33 16 100" opacity=".0">
+        <animate attributeName="opacity" values=".0;1;.0" begin=".5s" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <circle r="22" stroke-dasharray="22 45 22 100" opacity=".0">
+        <animate attributeName="opacity" values=".0;1;.0" begin="1s" dur="2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    <!-- gas -->
+    <g fill="transparent" stroke="#888" stroke-width="2" transform="translate(35 150)"  stroke-dasharray="5">
+      <animate attributeName="stroke-dashoffset" values="100;0" dur="1s" repeatCount="indefinite" />
+      <path d="m-20,0q-3,25 -15,33" />
+      <path d="m-5,0q0,25 -8,33" />
+      <path d="m5,0q3,25 8,33" />
+      <path d="m20,0q0,25 15,33" />
+    </g>
+  </g>
+  <g transform="translate(64 80)">
+    <text stroke="#16825d" font-family="courier">
+      <tspan font-size="36">Liming Jin</tspan>
+      <tspan x="0" dy="1.2em" font-size="28">@jinliming2</tspan>
+      <tspan x="0" dy="1.2em" font-size="24">jinliming2@gmail.com</tspan>
+    </text>
+  </g>
+</svg>
