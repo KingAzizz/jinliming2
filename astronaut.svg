@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="854" height="356" viewBox="0 0 854 356" preserveAspectRatio="none">
   <!-- Background -->
-  <rect fill="#000" x="0" y="0" width="854" height="356" />
+  <rect fill="#0d1117" x="0" y="0" width="854" height="356" />
   <!-- meteor shower -->
   <g stroke="#555">
     <line x1="50" x2="50">
