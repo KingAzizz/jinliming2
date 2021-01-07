@@ -85,11 +85,4 @@
       <path d="m20,0q0,25 15,33" />
     </g>
   </g>
-  <g transform="translate(64 80)">
-    <text stroke="#16825d" font-family="courier">
-      <tspan font-size="36">Liming Jin</tspan>
-      <tspan x="0" dy="1.2em" font-size="28">@jinliming2</tspan>
-      <tspan x="0" dy="1.2em" font-size="24">jinliming2@gmail.com</tspan>
-    </text>
-  </g>
 </svg>
