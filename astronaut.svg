@@ -1,53 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="854" height="356" viewBox="0 0 854 356" preserveAspectRatio="none">
   <defs>
-    <!-- background gradient -->
-    <radialGradient id="background">
-      <stop offset="90%" stop-color="#0d1117" />
-      <stop offset="100%" stop-color="transparent" />
-    </radialGradient>
-    <!-- mask clip gradient -->
+    <!-- background mask gradient -->
     <radialGradient id="clip">
       <stop offset="90%" stop-color="white" />
       <stop offset="100%" stop-color="black" />
     </radialGradient>
-    <!-- meteor shower mask -->
-    <mask id="meteor">
+    <!-- background mask -->
+    <mask id="background">
       <rect fill="url('#clip')" x="0" y="0" width="854" height="356" />
     </mask>
+    <!-- define for meteor shower -->
+    <g id="meteor-shower" mask="url('#background')">
+      <line x1="50" x2="50">
+        <animate attributeName="y1" values="-150;400" dur="1s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="0;550" dur="1s" repeatCount="indefinite" />
+      </line>
+      <line x1="160" x2="160">
+        <animate attributeName="y1" values="-60;400" dur=".8s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="0;460" dur=".8s" repeatCount="indefinite" />
+      </line>
+      <line x1="280" x2="280">
+        <animate attributeName="y1" values="-120;400" dur="1.2s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="0;520" dur="1.2s" repeatCount="indefinite" />
+      </line>
+      <line x1="420" x2="420">
+        <animate attributeName="y1" values="-80;400" dur=".7s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="0;480" dur=".7s" repeatCount="indefinite" />
+      </line>
+      <line x1="560" x2="560">
+        <animate attributeName="y1" values="-180;400" dur="1.5s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="0;580" dur="1.5s" repeatCount="indefinite" />
+      </line>
+      <line x1="640" x2="640">
+        <animate attributeName="y1" values="-80;400" dur="1s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="0;480" dur="1s" repeatCount="indefinite" />
+      </line>
+      <line x1="800" x2="800">
+        <animate attributeName="y1" values="-130;400" dur=".9s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="0;530" dur=".9s" repeatCount="indefinite" />
+      </line>
+    </g>
   </defs>
-  <!-- Background -->
-  <rect fill="url('#background')" x="0" y="0" width="854" height="356" />
   <!-- meteor shower -->
-  <g stroke="#555" mask="url('#meteor')">
-    <line x1="50" x2="50">
-      <animate attributeName="y1" values="-150;400" dur="1s" repeatCount="indefinite" />
-      <animate attributeName="y2" values="0;550" dur="1s" repeatCount="indefinite" />
-    </line>
-    <line x1="160" x2="160">
-      <animate attributeName="y1" values="-60;400" dur=".8s" repeatCount="indefinite" />
-      <animate attributeName="y2" values="0;460" dur=".8s" repeatCount="indefinite" />
-    </line>
-    <line x1="280" x2="280">
-      <animate attributeName="y1" values="-120;400" dur="1.2s" repeatCount="indefinite" />
-      <animate attributeName="y2" values="0;520" dur="1.2s" repeatCount="indefinite" />
-    </line>
-    <line x1="420" x2="420">
-      <animate attributeName="y1" values="-80;400" dur=".7s" repeatCount="indefinite" />
-      <animate attributeName="y2" values="0;480" dur=".7s" repeatCount="indefinite" />
-    </line>
-    <line x1="560" x2="560">
-      <animate attributeName="y1" values="-180;400" dur="1.5s" repeatCount="indefinite" />
-      <animate attributeName="y2" values="0;580" dur="1.5s" repeatCount="indefinite" />
-    </line>
-    <line x1="640" x2="640">
-      <animate attributeName="y1" values="-80;400" dur="1s" repeatCount="indefinite" />
-      <animate attributeName="y2" values="0;480" dur="1s" repeatCount="indefinite" />
-    </line>
-    <line x1="800" x2="800">
-      <animate attributeName="y1" values="-130;400" dur=".9s" repeatCount="indefinite" />
-      <animate attributeName="y2" values="0;530" dur=".9s" repeatCount="indefinite" />
-    </line>
-  </g>
+  <use href="#meteor-shower" stroke="rgba(255, 255, 255, 0.28)"></use>
+  <use href="#meteor-shower" stroke="rgba(13, 17, 23, 0.28)"></use>
   <!-- astronaut: width="70" height="140" -->
   <g fill="#ccc" stroke="#333" stroke-width="3" stroke-linecap="round" transform="translate(387 108)">
     <animateMotion dur="1s" repeatCount="indefinite" path="m0,0v-2zv2zh-2zh2zv3zv-3zh3zh-3z" />
