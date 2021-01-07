@@ -1,8 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="854" height="356" viewBox="0 0 854 356" preserveAspectRatio="none">
+  <defs>
+    <!-- background gradient -->
+    <radialGradient id="background">
+      <stop offset="90%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <!-- mask clip gradient -->
+    <radialGradient id="clip">
+      <stop offset="90%" stop-color="white" />
+      <stop offset="100%" stop-color="black" />
+    </radialGradient>
+    <!-- meteor shower mask -->
+    <mask id="meteor">
+      <rect fill="url('#clip')" x="0" y="0" width="854" height="356" />
+    </mask>
+  </defs>
   <!-- Background -->
-  <rect fill="#0d1117" x="0" y="0" width="854" height="356" />
+  <rect fill="url('#background')" x="0" y="0" width="854" height="356" />
   <!-- meteor shower -->
-  <g stroke="#555">
+  <g stroke="#555" mask="url('#meteor')">
     <line x1="50" x2="50">
       <animate attributeName="y1" values="-150;400" dur="1s" repeatCount="indefinite" />
       <animate attributeName="y2" values="0;550" dur="1s" repeatCount="indefinite" />
@@ -61,7 +77,7 @@
       </circle>
     </g>
     <!-- gas -->
-    <g fill="transparent" stroke="#888" stroke-width="2" transform="translate(35 150)"  stroke-dasharray="5">
+    <g fill="transparent" stroke="#888" stroke-width="2" transform="translate(35 150)" stroke-dasharray="5">
       <animate attributeName="stroke-dashoffset" values="100;0" dur="1s" repeatCount="indefinite" />
       <path d="m-20,0q-3,25 -15,33" />
       <path d="m-5,0q0,25 -8,33" />
